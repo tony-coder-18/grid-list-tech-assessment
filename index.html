@@ -1,52 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
 
     <title>Grid List Tech Assessment - My Registry</title>
 
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- <link rel="stylesheet/less" type="text/css" href="assets/css/style.less" /> -->
 
-  </head>
-  <body>
-    <header>
-      <div class="container">
+</head>
 
-          <nav>
-            <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="#">New</a></li>
-              <li><a href="#">Popular</a></li>
-              <li><a href="#">Trending</a></li>
-              <li><a href="#">Categories</a></li>
-            </ul>
-          </nav>
+<body>
+    <header>
+        <div class="container">
+            <!-- Header -->
+            <nav>
+                <ul>
+                    <li>
+                        <label for="filter">
+                            <p class="filter-label">
+                                Filter
+                            </p>
+                            <select name="filter" id="filter">
+                                <option value="">All Gifts</option>
+                                <option value="purchased">Purchased</option>
+                                <option value="list-item">List Item</option>
+                                <option value="list-item-2">List Item</option>
+                                <option value="list-item-3">List Item</option>
+                                <option value="list-item-4">List Item</option>
+                                <option value="list-item-5">List Item</option>
+                                <option value="list-item-6">List Item</option>
+                            </select>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="sort">
+                            <p class="sort-label">
+                                Sort
+                            </p>
+                            <select name="sort" id="sort">
+                                <option value="">Manual Sorting</option>
+                                <option value="featured">Featured</option>
+                                <option value="newest">Newest</option>
+                                <option value="price-high-low">Price: High-Low</option>
+                                <option value="price-low-high">Price: Low-High</option>
+                            </select>
+                        </label>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li class="show-mobile"><a href="/">Filter and Sorting</a></li>
+                    <li><a href="#">Request Address</a></li>
+                    <li><a href="#">Share</a></li>
+                    <li><a href="#">Print</a></li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <button class="btn-secondary btn-secondary--grid-list">
+                            <img src="" alt="">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn-secondary btn-secondary--grid-list">
+                            <img src="" alt="">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
         </div>
-      </div>
+        </div>
     </header>
 
     <main>
-      <h1>Prueba</h1>
+        <div class="row">
+            <article class="item">
+                <figure><div class="icons-row"><img class="favorite-icon" src="" alt=""><img class="note-icon hidden" src="" alt=""></div><img src="" alt=""></figure>
+                <div class="item__text-container">
+                    <h2></h2>
+                    <div class="item__description"></div>
+                    <div class="item__price"></div>
+                    <button class="btn-primary"></button>
+                </div>
+            </article>
+            <article class="item">
+                <figure><div class="icons-row"><img class="favorite-icon hidden" src="" alt=""><img class="note-icon hidden" src="" alt=""></div><img src="" alt=""></figure>
+                <div class="item__text-container">
+                    <h2></h2>
+                    <div class="item__description"></div>
+                    <div class="item__price"></div>
+                    <button class="btn-primary"></button>
+                </div>
+            </article>
+            <article class="item">
+                <figure><div class="icons-row"><img class="favorite-icon hidden" src="" alt=""><img class="note-icon hidden" src="" alt=""></div><img src="" alt=""></figure>
+                <div class="item__text-container">
+                    <h2></h2>
+                    <div class="item__description"></div>
+                    <div class="item__price"></div>
+                    <button class="btn-primary"></button>
+                </div>
+            </article>
+            <article class="item">
+                <figure><div class="icons-row"><img class="favorite-icon hidden" src="" alt=""><img class="note-icon hidden" src="" alt=""></div><img src="" alt=""></figure>
+                <div class="item__text-container">
+                    <h2></h2>
+                    <div class="item__description"></div>
+                    <div class="item__price"></div>
+                    <button class="btn-primary"></button>
+                </div>
+            </article>
+            <article class="item">
+                <figure><div class="icons-row"><img class="favorite-icon hidden" src="" alt=""><img class="note-icon hidden" src="" alt=""></div><img src="" alt=""></figure>
+                <div class="item__text-container">
+                    <h2></h2>
+                    <div class="item__description"></div>
+                    <div class="item__price"></div>
+                    <button class="btn-primary"></button>
+                </div>
+            </article>
+            <article class="item">
+                <figure><div class="icons-row"><img class="favorite-icon hidden" src="" alt=""><img class="note-icon hidden" src="" alt=""></div><img src="" alt=""></figure>
+                <div class="item__text-container">
+                    <h2></h2>
+                    <div class="item__description"></div>
+                    <div class="item__price"></div>
+                    <button class="btn-primary"></button>
+                </div>
+            </article>
+            <article class="item">
+                <figure><div class="icons-row"><img class="favorite-icon hidden" src="" alt=""><img class="note-icon hidden" src="" alt=""></div><img src="" alt=""></figure>
+                <div class="item__text-container">
+                    <h2></h2>
+                    <div class="item__description"></div>
+                    <div class="item__price"></div>
+                    <button class="btn-primary"></button>
+                </div>
+            </article>
+            <article class="item">
+                <figure><div class="icons-row"><img class="favorite-icon hidden" src="" alt=""><img class="note-icon" src="" alt=""></div><img src="" alt=""></figure>
+                <div class="item__text-container">
+                    <h2></h2>
+                    <div class="item__description"></div>
+                    <div class="item__price"></div>
+                    <button class="btn-primary"></button>
+                </div>
+            </article>
+        </div>
     </main>
 
-
-
-
     <div class="attribution">
-      Challenge by
-      <a href="https://www.myregistry.com/" target="_blank"
-        >My Registry</a
-      >. Coded by <a href="#">Bill Llach B</a>.
+        Challenge by
+        <a href="https://www.myregistry.com/" target="_blank">My Registry</a>. Coded by <a href="#">Bill Llach B</a>.
     </div>
-  </body>
+</body>
+
 </html>
