@@ -1,5 +1,114 @@
 @import url(globals/_reset.css);
+@import url(globals/_colors.css);
+/* Globals */
 
-h1 {
-    
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1120px) {
+
+    /* responsive decision applied to all text elements */
+    .container {
+        padding: 0 16px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Header */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    border-bottom: 1px solid #000;
+    padding: 0px 0px 16px 0px;
+    max-width: 100%;
+}
+
+.nav-left {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.dropdowns {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+/* Grid/List */
+.row {
+    max-width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 32px;
+}
+
+/* Gift Item */
+.gift {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px ;
+}
+.gift__image-wrapper {
+    position: relative;
+}
+.gift__img {
+    width: 100%;
+    object-fit: cover;
+}
+.icons-row {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.gift__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-primary {
+    background: #1E7B92;
+    color: white;
+    border: 1px solid #1E7B92;
+    border-radius: 100px;
+    font-weight: medium;
 }

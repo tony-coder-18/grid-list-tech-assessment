@@ -19,56 +19,58 @@
     <header>
         <div class="container">
             <!-- Header -->
-            <nav>
-                <ul>
-                    <li>
-                        <label for="filter">
-                            <p class="filter-label">
-                                Filter
-                            </p>
-                            <select name="filter" id="filter">
-                                <option value="">All Gifts</option>
-                                <option value="purchased">Purchased</option>
-                                <option value="list-item">List Item</option>
-                                <option value="list-item-2">List Item</option>
-                                <option value="list-item-3">List Item</option>
-                                <option value="list-item-4">List Item</option>
-                                <option value="list-item-5">List Item</option>
-                                <option value="list-item-6">List Item</option>
-                            </select>
-                        </label>
-                    </li>
-                    <li>
-                        <label for="sort">
-                            <p class="sort-label">
-                                Sort
-                            </p>
-                            <select name="sort" id="sort">
-                                <option value="">Manual Sorting</option>
-                                <option value="featured">Featured</option>
-                                <option value="newest">Newest</option>
-                                <option value="price-high-low">Price: High-Low</option>
-                                <option value="price-low-high">Price: Low-High</option>
-                            </select>
-                        </label>
-                    </li>
-                </ul>
+            <nav class="nav">
+                <div class="nav-left">
+                    <ul class="dropdowns">
+                        <li>
+                            <label for="filter">
+                                <p class="filter-label">
+                                    Filter
+                                </p>
+                                <select name="filter" id="filter">
+                                    <option value="">All Gifts</option>
+                                    <option value="purchased">Purchased</option>
+                                    <option value="list-item">List Item</option>
+                                    <option value="list-item-2">List Item</option>
+                                    <option value="list-item-3">List Item</option>
+                                    <option value="list-item-4">List Item</option>
+                                    <option value="list-item-5">List Item</option>
+                                    <option value="list-item-6">List Item</option>
+                                </select>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="sort">
+                                <p class="sort-label">
+                                    Sort
+                                </p>
+                                <select name="sort" id="sort">
+                                    <option value="">Manual Sorting</option>
+                                    <option value="featured">Featured</option>
+                                    <option value="newest">Newest</option>
+                                    <option value="price-high-low">Price: High-Low</option>
+                                    <option value="price-low-high">Price: Low-High</option>
+                                </select>
+                            </label>
+                        </li>
+                    </ul>
+    
+                    <ul class="actions">
+                        <li class="show-mobile"><a href="/">Filter and Sorting</a></li>
+                        <li><a href="#">Request Address</a></li>
+                        <li><a href="#">Share</a></li>
+                        <li><a href="#">Print</a></li>
+                    </ul>
+                </div>
 
-                <ul>
-                    <li class="show-mobile"><a href="/">Filter and Sorting</a></li>
-                    <li><a href="#">Request Address</a></li>
-                    <li><a href="#">Share</a></li>
-                    <li><a href="#">Print</a></li>
-                </ul>
-
-                <ul>
+                <ul class="nav-right">
                     <li>
-                        <button class="btn-secondary btn-secondary--grid-list">
+                        <button class="btn-secondary btn-secondary--grid-list" id="gridToggle">
                             <img src="" alt="">
                         </button>
                     </li>
                     <li>
-                        <button class="btn-secondary btn-secondary--grid-list">
+                        <button class="btn-secondary btn-secondary--grid-list" id="listToggle">
                             <img src="" alt="">
                         </button>
                     </li>
@@ -79,79 +81,305 @@
     </header>
 
     <main>
-        <div class="row">
-            <article class="item">
-                <figure><div class="icons-row"><img class="favorite-icon" src="" alt=""><img class="note-icon hidden" src="" alt=""></div><img src="" alt=""></figure>
-                <div class="item__text-container">
-                    <h2></h2>
-                    <div class="item__description"></div>
-                    <div class="item__price"></div>
-                    <button class="btn-primary"></button>
-                </div>
-            </article>
-            <article class="item">
-                <figure><div class="icons-row"><img class="favorite-icon hidden" src="" alt=""><img class="note-icon hidden" src="" alt=""></div><img src="" alt=""></figure>
-                <div class="item__text-container">
-                    <h2></h2>
-                    <div class="item__description"></div>
-                    <div class="item__price"></div>
-                    <button class="btn-primary"></button>
-                </div>
-            </article>
-            <article class="item">
-                <figure><div class="icons-row"><img class="favorite-icon hidden" src="" alt=""><img class="note-icon hidden" src="" alt=""></div><img src="" alt=""></figure>
-                <div class="item__text-container">
-                    <h2></h2>
-                    <div class="item__description"></div>
-                    <div class="item__price"></div>
-                    <button class="btn-primary"></button>
-                </div>
-            </article>
-            <article class="item">
-                <figure><div class="icons-row"><img class="favorite-icon hidden" src="" alt=""><img class="note-icon hidden" src="" alt=""></div><img src="" alt=""></figure>
-                <div class="item__text-container">
-                    <h2></h2>
-                    <div class="item__description"></div>
-                    <div class="item__price"></div>
-                    <button class="btn-primary"></button>
-                </div>
-            </article>
-            <article class="item">
-                <figure><div class="icons-row"><img class="favorite-icon hidden" src="" alt=""><img class="note-icon hidden" src="" alt=""></div><img src="" alt=""></figure>
-                <div class="item__text-container">
-                    <h2></h2>
-                    <div class="item__description"></div>
-                    <div class="item__price"></div>
-                    <button class="btn-primary"></button>
-                </div>
-            </article>
-            <article class="item">
-                <figure><div class="icons-row"><img class="favorite-icon hidden" src="" alt=""><img class="note-icon hidden" src="" alt=""></div><img src="" alt=""></figure>
-                <div class="item__text-container">
-                    <h2></h2>
-                    <div class="item__description"></div>
-                    <div class="item__price"></div>
-                    <button class="btn-primary"></button>
-                </div>
-            </article>
-            <article class="item">
-                <figure><div class="icons-row"><img class="favorite-icon hidden" src="" alt=""><img class="note-icon hidden" src="" alt=""></div><img src="" alt=""></figure>
-                <div class="item__text-container">
-                    <h2></h2>
-                    <div class="item__description"></div>
-                    <div class="item__price"></div>
-                    <button class="btn-primary"></button>
-                </div>
-            </article>
-            <article class="item">
-                <figure><div class="icons-row"><img class="favorite-icon hidden" src="" alt=""><img class="note-icon" src="" alt=""></div><img src="" alt=""></figure>
-                <div class="item__text-container">
-                    <h2></h2>
-                    <div class="item__description"></div>
-                    <div class="item__price"></div>
-                    <button class="btn-primary"></button>
-                </div>
-            </article>
+        <div class="container">
+            <div class="row">
+
+                <article class="gift">
+                    <figure class="gift__image-wrapper">
+                        <div class="icons-row">
+                            <img class="favorite-icon" src="assets/images/favorite-icon.png" alt="favorites icon">
+                            <img class="note-icon hidden" src="assets/images/note-icon.png" alt="note icon">
+                        </div>
+                        <img class="gift__img" src="assets/images/item-image-primary.png" alt="Gift Image">
+                    </figure>
+                    <div class="gift__content">
+
+                        <div class="gift__details">
+
+                            <div class="gift__info">
+                                <h2>
+                                    SKIP*HOP® Moby® 4-Piece
+                                    Bath Time Essentials Kit in Grey
+                                </h2>
+                                <div class="gift__description">
+                                    <p>Color: Red</p>
+                                    <p>Size: Lg</p>
+                                    <p>Desired: 2</p>
+                                    <p>Purchased: 1</p>
+                                </div>
+                            </div>
+
+                            <div class="gift__price">
+                                $43.99
+                            </div>
+                        </div>
+
+                        <button class="btn-primary">
+                            Buy This Gift
+                        </button>
+                    </div>
+                </article>
+    
+                <article class="gift gift--purchased">
+                    <figure class="gift__image-wrapper">
+                        <div class="icons-row">
+                            <img clas hiddens="favorite-icon hidden" src="assets/images/favorite-icon.png" alt="favorites icon">
+                            <img class="note-icon hidden" src="assets/images/note-icon.png" alt="note icon">
+                        </div>
+                        <img class="gift__img" src="assets/images/item-image-secondary.png" alt="Gift Image">
+                    </figure>
+                    <div class="gift__content gift__content--purchased">
+
+                        <div class="gift__details">
+
+                            <div class="gift__info">
+                                <h2>
+                                    SKIP*HOP® Moby® 4-Piece
+                                    Bath Time Essentials Kit in Grey
+                                </h2>
+                                <div class="gift__description">
+                                    <p>Color: Red</p>
+                                    <p>Size: Lg</p>
+                                    <p>Desired: 2</p>
+                                    <p>Purchased: 1</p>
+                                </div>
+                            </div>
+
+                            <div class="gift__price">
+                                $43.99
+                            </div>
+                        </div>
+
+                        <button class="btn-primary btn-primary--purchased">
+                            Purchased
+                        </button>
+                    </div>
+                </article>
+
+                <article class="gift">
+                    <figure class="gift__image-wrapper">
+                        <div class="icons-row">
+                            <img class="favorite-icon hidden" src="assets/images/favorite-icon.png" alt="favorites icon">
+                            <img class="note-icon hidden" src="assets/images/note-icon.png" alt="note icon">
+                        </div>
+                        <img class="gift__img" src="assets/images/item-image-primary.png" alt="Gift Image">
+                    </figure>
+                    <div class="gift__content">
+
+                        <div class="gift__details">
+
+                            <div class="gift__info">
+                                <h2>
+                                    SKIP*HOP® Moby® 4-Piece
+                                    Bath Time Essentials Kit in Grey
+                                </h2>
+                                <div class="gift__description">
+                                    <p>Color: Red</p>
+                                    <p>Size: Lg</p>
+                                    <p>Desired: 2</p>
+                                    <p>Purchased: 1</p>
+                                </div>
+                            </div>
+
+                            <div class="gift__price">
+                                $43.99
+                            </div>
+                        </div>
+
+                        <button class="btn-primary">
+                            Buy This Gift
+                        </button>
+                    </div>
+                </article>
+    
+                <article class="gift gift--purchased">
+                    <figure class="gift__image-wrapper">
+                        <div class="icons-row">
+                            <img clas hiddens="favorite-icon" src="assets/images/favorite-icon.png" alt="favorites icon">
+                            <img class="note-icon hidden" src="assets/images/note-icon.png" alt="note icon">
+                        </div>
+                        <img class="gift__img" src="assets/images/item-image-secondary.png" alt="Gift Image">
+                    </figure>
+                    <div class="gift__content gift__content--purchased">
+
+                        <div class="gift__details">
+
+                            <div class="gift__info">
+                                <h2>
+                                    SKIP*HOP® Moby® 4-Piece
+                                    Bath Time Essentials Kit in Grey
+                                </h2>
+                                <div class="gift__description">
+                                    <p>Color: Red</p>
+                                    <p>Size: Lg</p>
+                                    <p>Desired: 2</p>
+                                    <p>Purchased: 1</p>
+                                </div>
+                            </div>
+
+                            <div class="gift__price">
+                                $43.99
+                            </div>
+                        </div>
+
+                        <button class="btn-primary btn-primary--purchased">
+                            Purchased
+                        </button>
+                    </div>
+                </article>
+
+                <article class="gift">
+                    <figure class="gift__image-wrapper">
+                        <div class="icons-row">
+                            <img class="favorite-icon hidden" src="assets/images/favorite-icon.png" alt="favorites icon">
+                            <img class="note-icon hidden" src="assets/images/note-icon.png" alt="note icon">
+                        </div>
+                        <img class="gift__img" src="assets/images/item-image-primary.png" alt="Gift Image">
+                    </figure>
+                    <div class="gift__content">
+
+                        <div class="gift__details">
+
+                            <div class="gift__info">
+                                <h2>
+                                    SKIP*HOP® Moby® 4-Piece
+                                    Bath Time Essentials Kit in Grey
+                                </h2>
+                                <div class="gift__description">
+                                    <p>Color: Red</p>
+                                    <p>Size: Lg</p>
+                                    <p>Desired: 2</p>
+                                    <p>Purchased: 1</p>
+                                </div>
+                            </div>
+
+                            <div class="gift__price">
+                                $43.99
+                            </div>
+                        </div>
+
+                        <button class="btn-primary">
+                            Buy This Gift
+                        </button>
+                    </div>
+                </article>
+    
+                <article class="gift gift--purchased">
+                    <figure class="gift__image-wrapper">
+                        <div class="icons-row">
+                            <img clas hiddens="favorite-icon" src="assets/images/favorite-icon.png" alt="favorites icon">
+                            <img class="note-icon hidden" src="assets/images/note-icon.png" alt="note icon">
+                        </div>
+                        <img class="gift__img" src="assets/images/item-image-secondary.png" alt="Gift Image">
+                    </figure>
+                    <div class="gift__content gift__content--purchased">
+
+                        <div class="gift__details">
+
+                            <div class="gift__info">
+                                <h2>
+                                    SKIP*HOP® Moby® 4-Piece
+                                    Bath Time Essentials Kit in Grey
+                                </h2>
+                                <div class="gift__description">
+                                    <p>Color: Red</p>
+                                    <p>Size: Lg</p>
+                                    <p>Desired: 2</p>
+                                    <p>Purchased: 1</p>
+                                </div>
+                            </div>
+
+                            <div class="gift__price">
+                                $43.99
+                            </div>
+                        </div>
+
+                        <button class="btn-primary btn-primary--purchased">
+                            Purchased
+                        </button>
+                    </div>
+                </article>
+
+                <article class="gift">
+                    <figure class="gift__image-wrapper">
+                        <div class="icons-row">
+                            <img class="favorite-icon hidden" src="assets/images/favorite-icon.png" alt="favorites icon">
+                            <img class="note-icon hidden" src="assets/images/note-icon.png" alt="note icon">
+                        </div>
+                        <img class="gift__img" src="assets/images/item-image-primary.png" alt="Gift Image">
+                    </figure>
+                    <div class="gift__content">
+
+                        <div class="gift__details">
+
+                            <div class="gift__info">
+                                <h2>
+                                    SKIP*HOP® Moby® 4-Piece
+                                    Bath Time Essentials Kit in Grey
+                                </h2>
+                                <div class="gift__description">
+                                    <p>Color: Red</p>
+                                    <p>Size: Lg</p>
+                                    <p>Desired: 2</p>
+                                    <p>Purchased: 1</p>
+                                </div>
+                            </div>
+
+                            <div class="gift__price">
+                                $43.99
+                            </div>
+                        </div>
+
+                        <button class="btn-primary">
+                            Buy This Gift
+                        </button>
+                    </div>
+                </article>
+    
+                <article class="gift gift--purchased">
+                    <figure class="gift__image-wrapper">
+                        <div class="icons-row">
+                            <img class="favorite-icon hidden" src="assets/images/favorite-icon.png" alt="favorites icon">
+                            <img class="note-icon" src="assets/images/note-icon.png" alt="note icon">
+                        </div>
+                        <img class="gift__img" src="assets/images/item-image-secondary.png" alt="Gift Image">
+                    </figure>
+                    <div class="gift__content gift__content--purchased">
+
+                        <div class="gift__details">
+
+                            <div class="gift__info">
+                                <h2>
+                                    SKIP*HOP® Moby® 4-Piece
+                                    Bath Time Essentials Kit in Grey
+                                </h2>
+                                <div class="gift__description">
+                                    <p>Color: Red</p>
+                                    <p>Size: Lg</p>
+                                    <p>Desired: 2</p>
+                                    <p>Purchased: 1</p>
+                                </div>
+                            </div>
+
+                            <div class="gift__price">
+                                $43.99
+                            </div>
+                        </div>
+
+                        <button class="btn-primary hidden">
+                            Buy This Gift
+                        </button>
+
+                        <div class="purchase-message">
+                            You purchased this item. <br>
+                            (only visible to you)
+                        </div>
+
+                    </div>
+                </article>
+    
+                
+            </div>
         </div>
     </main>
 
