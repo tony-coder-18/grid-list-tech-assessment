@@ -1,6 +1,14 @@
 # grid-list-tech-assessment
 
-Organization:
+## Design mockup:
+
+![Alt text]("assets/images/desktop-mockup.png")
+
+## Final Website:
+
+![Alt text]("assets/images/final-result-desktop.png")
+
+# # Organization:
 
 1. set up files
 2. do html markup
@@ -15,13 +23,6 @@ Organization:
 11. deploy with netlify
 12. Add ss of original design in README
 13. Add description of the task in README
-14. elminate this list from README
-
-para hacer que overflow text se pnga 3 puntos:
-https://community.ptc.com/t5/ThingWorx-Developers/How-to-make-that-dropdown-selected-text-in-multi-line-wrap/td-p/729630
-
-para hacer input con label arriba
-https://javascript.plainenglish.io/floating-labels-with-pure-css-c70a199f0351
 
 ## Optmizations:
 
