@@ -23,43 +23,48 @@
                 <div class="nav-left">
                     <ul class="dropdowns">
                         <li>
-                            <label for="filter">
-                                <p class="filter-label">
+                            <label class="dropdown-label" for="filter">
+                                <p class="dropdown-label__text">
                                     Filter
                                 </p>
-                                <select name="filter" id="filter">
-                                    <option value="">All Gifts</option>
-                                    <option value="purchased">Purchased</option>
-                                    <option value="list-item">List Item</option>
-                                    <option value="list-item-2">List Item</option>
-                                    <option value="list-item-3">List Item</option>
-                                    <option value="list-item-4">List Item</option>
-                                    <option value="list-item-5">List Item</option>
-                                    <option value="list-item-6">List Item</option>
+                                <select class="dropdown-field" name="filter" id="filter">
+                                    <div class="option-list">
+                                        <option value="">All Gifts</option>
+                                        <option value="purchased">Purchased</option>
+                                        <option value="list-item">List Item</option>
+                                        <option value="list-item-2">List Item</option>
+                                        <option value="list-item-3">List Item</option>
+                                        <option value="list-item-4">List Item</option>
+                                        <option value="list-item-5">List Item</option>
+                                        <option value="list-item-6">List Item</option>
+                                    </div>
+                                </div>
                                 </select>
                             </label>
                         </li>
                         <li>
-                            <label for="sort">
-                                <p class="sort-label">
+                            <label class="dropdown-label" for="sort">
+                                <p class="dropdown-label__text">
                                     Sort
                                 </p>
-                                <select name="sort" id="sort">
-                                    <option value="">Manual Sorting</option>
-                                    <option value="featured">Featured</option>
-                                    <option value="newest">Newest</option>
-                                    <option value="price-high-low">Price: High-Low</option>
-                                    <option value="price-low-high">Price: Low-High</option>
+                                <select class="dropdown-field" name="sort" id="sort">
+                                    <div class="option-list">
+                                        <option value="">Manual Sorting</option>
+                                        <option value="featured">Featured</option>
+                                        <option value="newest">Newest</option>
+                                        <option value="price-high-low">Price: High-Low</option>
+                                        <option value="price-low-high">Price: Low-High</option>
+                                    </div>
                                 </select>
                             </label>
                         </li>
                     </ul>
     
                     <ul class="actions">
-                        <li class="show-mobile"><a href="/">Filter and Sorting</a></li>
-                        <li><a href="#">Request Address</a></li>
-                        <li><a href="#">Share</a></li>
-                        <li><a href="#">Print</a></li>
+                        <li class="show-mobile"><a class="btn-secondary" href="#">Filter and Sorting</a></li>
+                        <li><a class="btn-secondary" href="#">Request Address</a></li>
+                        <li><a class="btn-secondary" href="#">Share</a></li>
+                        <li><a class="btn-secondary" href="#">Print</a></li>
                     </ul>
                 </div>
 

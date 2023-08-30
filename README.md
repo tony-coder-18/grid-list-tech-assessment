@@ -22,3 +22,8 @@ https://community.ptc.com/t5/ThingWorx-Developers/How-to-make-that-dropdown-sele
 
 para hacer input con label arriba
 https://javascript.plainenglish.io/floating-labels-with-pure-css-c70a199f0351
+
+## Optmizations:
+
+Use LESS or SASS for making typography styles mixings
+so they are more maintanable
