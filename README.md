@@ -4,9 +4,10 @@
 
 ![Alt text]("assets/images/desktop-mockup.png")
 
+
 ## Final Website:
 
-![Alt text]("assets/images/final-result-desktop.png")
+![Alt text](assets/images/final-result-desktop.png)
 
 # # Organization:
 
