@@ -2,7 +2,7 @@
 
 ## Design mockup:
 
-![Alt text]("assets/images/desktop-mockup.png")
+![Alt text](assets/images/desktop-mockup.png)
 
 
 ## Final Website:
