@@ -1,0 +1,4 @@
+:root {
+    --transition-time: 0.2s;
+    --transition-function: ease-in-out;
+}
