@@ -47,9 +47,7 @@ img {
     height: auto;
 }
 
-.hidden {
-    display: none!important;
-}
+
 
 /* Header */
 
@@ -85,6 +83,8 @@ img {
 .dropdown-label {
     position: relative;
 }
+
+
 .dropdown-label__text {
     position: absolute;
     top: -125%;
@@ -96,23 +96,27 @@ img {
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.5px;
-
+    
     color: var(--color-secondary-text)
 }
+
 .dropdown-field {
     height: 100%;
     border-radius: 2px;
     border: 1px solid var(--color-neutral);
     max-width: 240px;
     min-width: 200px;
-
+    
     padding: 12px 16px 12px 16px;
-
+    
     font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 24px;
     letter-spacing: 0.5px;
 }
 
+.dropdown-field:focus-visible {
+    border: 1px solid var(--color-primary);
+}
 .actions {
     display: flex;
     justify-content: space-between;
@@ -139,6 +143,14 @@ img {
     background-color: var(--color-primary-light);
 }
 
+.btn-secondary--grid-list {
+    height: auto;
+    border: none;
+    height: 40px;
+    aspect-ratio: 1;
+    padding: 0;
+}
+
 /* Grid/List */
 .row {
     max-width: 100%;
@@ -151,6 +163,10 @@ img {
     column-gap: 32px;
     padding: 16px 0;
 }
+.row--list {
+    grid-template-columns: 1fr;
+    row-gap: 0px;
+}
 
 /* Components */
 /* Gift Item */
@@ -162,6 +178,14 @@ img {
     /* flex-direction: row; */
     width: 100%;
     border: 1px solid var(--color-divider);
+}
+.gift--list {
+    flex-direction: row;
+    padding: 16px 0;
+    align-items: center;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 .gift__image-wrapper {
     position: relative;
@@ -215,6 +239,14 @@ img {
     /* When Changing to List */
     /* flex-direction: row;
     align-items: flex-end; */
+}
+
+.gift__content--list {
+    flex-grow: 1;
+
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
 .gift__content--purchased {
@@ -298,6 +330,11 @@ img {
 
     background-color: var(--color-neutral-1);
 }
+.purchase-message--list {
+    height: auto;
+    padding: 8px 16px;
+    align-self: flex-end;
+}
 
 .btn-primary {
     height: 100%;
@@ -338,4 +375,20 @@ img {
 
 .--text-small {
     font-size: 12px;
+}
+
+.hidden {
+    display: none!important;
+}
+.show-mobile {
+    display: block;
+}
+@media (min-width: 391px) {
+    .show-mobile {
+        display: none;
+    }
+}
+
+.grid-list-toggle-active {
+    background-color: var(--color-primary-light);
 }
