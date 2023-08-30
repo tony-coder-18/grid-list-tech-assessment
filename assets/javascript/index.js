@@ -4,6 +4,8 @@ const gridList = document.querySelector(".row");
 const gifts = document.querySelectorAll(".gift");
 const giftContents = document.querySelectorAll(".gift__content ");
 const purchaseMessage = document.querySelector(".purchase-message");
+const giftImages = document.querySelectorAll(".gift__image-wrapper");
+const giftActions = document.querySelectorAll(".gift__action");
 
 buttonsWithDataToggle.forEach(button => {
     
@@ -20,6 +22,12 @@ buttonsWithDataToggle.forEach(button => {
                     giftContent.classList.add("gift__content--list");
                 });
                 purchaseMessage.classList.add("purchase-message--list");
+                giftImages.forEach((giftImage)=>{
+                    giftImage.classList.add("gift__image-wrapper--list");
+                });
+                giftActions.forEach((giftAction)=>{
+                    giftAction.classList.add("gift__action--list");
+                });
             } else {
                 console.log("you clicked list");
             }
@@ -33,6 +41,12 @@ buttonsWithDataToggle.forEach(button => {
                     giftContent.classList.remove("gift__content--list");
                 });
                 purchaseMessage.classList.remove("purchase-message--list");
+                giftImages.forEach((giftImage)=>{
+                    giftImage.classList.remove("gift__image-wrapper--list");
+                });
+                giftActions.forEach((giftAction)=>{
+                    giftAction.classList.remove("gift__action--list");
+                });
             } else {
                 console.log("you clicked grid");
             }
@@ -57,3 +71,10 @@ buttonList.addEventListener('click', () => {
         buttonGrid.classList.remove('grid-list-toggle-active');
     }
 });
+
+buttonFilterAndSorting = document.querySelector(".filter-and-sort");
+dropdowns = document.querySelector(".dropdowns");
+
+buttonFilterAndSorting.addEventListener((el)=>{
+    dropdowns.style.height = "auto";
+})

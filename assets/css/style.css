@@ -29,6 +29,7 @@ button {
 }
 
 .container {
+    overflow: hidden;
     width: 100%;
     max-width: 1120px;
     margin: 0 auto;
@@ -38,7 +39,7 @@ button {
 
     /* responsive decision applied to all text elements */
     .container {
-        padding: 0 16px;
+        padding: 0 15px;
     }
 }
 
@@ -78,6 +79,7 @@ img {
     display: flex;
     justify-content: space-between;
     gap: 16px;
+    flex-wrap: wrap;
 }
 
 .dropdown-label {
@@ -96,7 +98,7 @@ img {
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.5px;
-    
+
     color: var(--color-secondary-text)
 }
 
@@ -106,9 +108,9 @@ img {
     border: 1px solid var(--color-neutral);
     max-width: 240px;
     min-width: 200px;
-    
+
     padding: 12px 16px 12px 16px;
-    
+
     font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 24px;
     letter-spacing: 0.5px;
@@ -117,6 +119,7 @@ img {
 .dropdown-field:focus-visible {
     border: 1px solid var(--color-primary);
 }
+
 .actions {
     display: flex;
     justify-content: space-between;
@@ -157,12 +160,11 @@ img {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
-    /* When changing to List */
-    /* grid-template-columns: 1fr; */
     row-gap: 16px;
     column-gap: 32px;
     padding: 16px 0;
 }
+
 .row--list {
     grid-template-columns: 1fr;
     row-gap: 0px;
@@ -174,11 +176,10 @@ img {
     height: 100%;
     display: flex;
     flex-direction: column;
-    /* When changing to List */
-    /* flex-direction: row; */
     width: 100%;
     border: 1px solid var(--color-divider);
 }
+
 .gift--list {
     flex-direction: row;
     padding: 16px 0;
@@ -187,8 +188,13 @@ img {
     border-left: none;
     border-right: none;
 }
+
 .gift__image-wrapper {
     position: relative;
+}
+
+.gift__image-wrapper--list {
+    height: 128px;
 }
 
 .gift__img {
@@ -196,6 +202,7 @@ img {
     height: 100%;
     object-fit: cover;
 }
+
 .icons-row {
     display: flex;
     gap: 8px;
@@ -203,13 +210,14 @@ img {
     top: 4px;
     left: 4px;
 }
+
 .search-wrapper {
     opacity: 0;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     position: absolute;
     top: 0px;
     left: 0px;
@@ -219,6 +227,7 @@ img {
 
     transition: opacity var(--transition-time) var(--transition-function);
 }
+
 .search-hover-image {
     border-radius: 100px;
     background: rgba(255, 255, 255, 0.75);
@@ -236,9 +245,6 @@ img {
 .gift__content {
     display: flex;
     flex-direction: column;
-    /* When Changing to List */
-    /* flex-direction: row;
-    align-items: flex-end; */
 }
 
 .gift__content--list {
@@ -312,6 +318,10 @@ img {
     flex-direction: column;
 }
 
+.gift__action--list {
+    align-self: flex-end;
+}
+
 .gift__price {
     font-weight: 600;
     line-height: 20px;
@@ -330,6 +340,7 @@ img {
 
     background-color: var(--color-neutral-1);
 }
+
 .purchase-message--list {
     height: auto;
     padding: 8px 16px;
@@ -367,8 +378,11 @@ img {
     background-color: transparent;
 }
 
+
+
 .attribution {
     margin-top: 28px;
+    font-size: 0.8rem;
 }
 
 /* Utils */
@@ -378,11 +392,19 @@ img {
 }
 
 .hidden {
-    display: none!important;
+    display: none !important;
 }
+
+@media (max-width: 391px) {
+    .hidden-mobile {
+        display: none;
+    }
+}
+
 .show-mobile {
     display: block;
 }
+
 @media (min-width: 391px) {
     .show-mobile {
         display: none;
@@ -391,4 +413,66 @@ img {
 
 .grid-list-toggle-active {
     background-color: var(--color-primary-light);
+}
+
+.opacity-low {
+    opacity: 0.5;
+}
+
+
+/* Media Queries */
+
+
+@media (max-width: 390px) {
+    body {
+        font-size: 14px;
+    }
+    .nav-left {
+        padding: 0;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    .nav-right {
+        display: none;
+    }
+    .gift {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+        border: none;
+        align-items: center;
+    }
+
+    .dropdowns {
+        height: 0;
+        overflow: hidden;
+    }
+
+    .gift__image-wrapper {
+        width: 128px;
+        height: 128px;
+        /* height: 180px; */
+        /* width: 116px; */
+    }
+
+    .gift__content {
+        width: calc(100% - 128px);
+    }
+
+    .gift__details {
+        padding: 0 16px;
+        gap: 8px;
+    }
+
+    .gift__action {
+        padding: 16px 0 0;
+        width: 100%;
+    }
+
+    .purchase-message {
+        width: 100%;
+        height: auto;
+        margin-top: 16px;
+    }
+
 }
